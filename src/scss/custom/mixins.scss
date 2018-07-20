@@ -1,4 +1,4 @@
-$mqs: (mobile: 321px, medmobile: 375px, lgmobile: 480px, tablet: 768px, desktop: 1200px, xl:1400px);
+$mqs: (smmobile: 479px, mobile: 480px, lgmobile: 768px, tablet: 1024px, desktop: 1200px, xlarge: 1200px);
 
 @mixin smaller-than($device) {
   $width: map-get($mqs, $device);

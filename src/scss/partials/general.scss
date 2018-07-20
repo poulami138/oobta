@@ -132,3 +132,409 @@ hr {
 }
 
 
+section.hero {
+    background: linear-gradient(to right, #eeeeee 0%, #e9ebeb 50%);
+        padding: 76px 0 0;
+        display: block;
+        color: $citi_blue;
+    .wrapper {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 310px;
+            text-align: center;
+            padding-bottom: 25px;
+        
+        @include larger-than (smmobile) {
+                width: 92%;
+                max-width: 618px;
+            }
+            @include larger-than (desktop) {
+                width: 90%;
+                max-width: 1024px;
+            }
+        
+         h1 {
+                padding: 45px 0 10px;
+                width: 100%;
+                margin: 0 auto;
+                text-transform: uppercase;
+                box-sizing: border-box;
+                color: #002a54;
+                font-size: 40px;
+                @include smaller-than(smmobile){
+                    font-size: 30px;
+                }
+
+                @include larger-than (lgmobile) {
+                    max-width: none;
+                    padding-bottom: 5px;
+                    padding-top: 25px;
+                    font-size: 30px;
+                }
+                
+                @include larger-than (desktop) {
+                    padding-bottom: 9px;
+                    padding-top: 5px;
+                    font-size: 45px;
+                }
+                
+                span {
+                    &.sky_blue{color:#46b7e6;}  
+                    display: inline-block;
+                   
+                    
+                 
+                }
+            }
+        .discription{
+                color:$dark_blue;
+                font-size: 20px;
+                line-height: 1.2em;
+                @extend .font_regular;
+                letter-spacing: 0.4px;
+                padding-left: 17px;
+                margin: 0;
+            
+                @include larger-than(lgmobile){
+                    font-size: 16px;
+                }
+                @include larger-than(desktop){
+                    font-size: 25px;
+                }
+                
+            }
+        .rate_info{
+                display: inline-block;
+                vertical-align: top;
+                position: relative;
+                width: 100%;
+            @include larger-than(lgmobile) {
+                    width: 40%;
+                    padding-right: 5%;
+                    margin: 25px 5% 0 0;
+                    border-right: 1px solid #46c6e5;
+                    text-align: left;
+                    padding-bottom: 20px;
+                }
+                @include larger-than(desktop){
+                    margin-top: 30px;
+                }
+            p.interest-rate{
+                    @extend .font_light;
+                    font-size: 110px;
+                    line-height: 1em;
+                    color: #002a54;
+                    letter-spacing: -3px;
+                    margin: 0;
+                    
+                    @include larger-than(lgmobile){
+                        font-size: 107px;
+                    }
+                    @include larger-than(desktop){
+                        font-size: 171px;
+                    }
+
+ 
+                    sup{
+                        font-size: 57px;
+                        top: -0.7em;
+                        @include larger-than(lgmobile){
+                            top: -0.6em;
+                        }
+                        @include larger-than(desktop){
+                            font-size: 80px;
+                            top: -0.8em;
+                        }
+                    }
+                }
+            .details {
+                    @extend .font_light;
+                    font-size: 16px;
+                    line-height: 1.2em; 
+                    margin: 0;
+                        text-transform: uppercase;
+                        color: #25a6da;
+                        letter-spacing: .5px;
+                        padding-bottom: 7px;
+                        @include larger-than(lgmobile){
+                            font-size: 15px;
+                            padding-bottom: 3px;
+                        }
+                        @include larger-than(desktop) {
+                            font-size: 24px;
+                        }
+                }
+            .disclaimer {
+                    margin: 0;
+                        font-size: 18px;
+                        color: $dark_blue;
+                        line-height: 1.2em;
+                        @include larger-than(lgmobile){
+                            font-size: 10px;
+                        }
+                        @include larger-than(desktop) {
+                            font-size: 16px;
+                            line-height: 1.4em;
+                        }
+                        a {
+                            color: #002a54;
+                        }
+                }
+
+        }
+        
+       .right-side {
+                display: inline-block;
+                width: 100%;
+           @include larger-than(lgmobile){
+                    width: 40%;
+                }
+            ul{
+                    list-style-type: none;
+                    margin: 20px auto 0;
+                    padding: 1px 0;
+                @include between(mobile, lgmobile){
+                        max-width: 300px;
+                    }
+                li{
+                        margin: 0 auto;
+                        @extend .font_regular;
+                        font-size: 15px;
+                        text-transform: uppercase;
+                        color: $dark_blue;
+                        text-align: left;
+                        height: 35px;
+                        line-height: 35px;
+                        width: 245px;
+                        display: block;
+                        position: relative;
+                        padding: 1px 0 1px 60px;
+                        margin: 5px 0;
+                    @include larger-than(lgmobile){
+                            font-size: 15px;
+                            margin: 15px 0;
+                        }
+                        @include larger-than(desktop){
+                            margin: 40px 0;
+                            font-size: 21px;
+                            width: 400px;
+                        }
+                     &:after{
+                            content: "";
+                            width: 34px;
+                            height: 35px;
+                            background: url(../images/list-mark.png) no-repeat;
+                            display: block;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+    
+                            @include between(lgmobile, tablet){
+                                width: 24px;
+                                background-size: contain;
+                                background-position: center;
+                            }
+                        }
+                }
+           }
+        }
+    }
+}
+
+ .blue{
+        background-color:$dark_blue;
+     .wrapper {
+            text-align: center;
+            width: 90%;
+            margin: 0 auto;
+            padding: 23px 10px 34px;
+         @include larger-than(lgmobile){
+                padding: 15px 10px 20px;
+            }
+            @include larger-than(desktop){
+                padding: 23px 10px 34px;
+            }
+         p{
+                @extend .font_light;
+                font-size: 28px; 
+                color: #fff;
+                padding-bottom: 25px;
+                max-width: 300px;
+                line-height: 1.2em;
+                margin: 0 auto;
+
+                @include larger-than(lgmobile){
+                    padding: 0 0 13px;
+                    font-size: 16px;
+                    max-width: none;
+                }
+                @include larger-than(desktop){
+                    font-size: 32px;
+                    padding-bottom: 20px;
+                }
+            }
+         a{
+                color: #25a6da;
+                display: block;
+                margin-top: 20px;
+            }
+         button.citi-button.light-blue{
+                background: #25a6da;
+             border: none;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+    width: 200px;
+    border-radius: 6px;
+    margin-top: 25px;
+    position: relative;
+    cursor: pointer;
+
+                @include between(lgmobile, tablet){
+                    width: 120px;
+                    height: 28px;
+                    line-height: 25px;
+                    font-size: 12px;
+
+                    &:after{
+                        margin-left: 0;
+                    }
+                }
+                @include larger-than(desktop){
+                    font-size: 20px;
+                }
+            }
+         button.citi-button.light-blue:hover{
+                background: $citi_blue;
+            }
+     }
+}
+.white{
+    p {
+            max-width: 350px;
+            margin: 0 auto;
+
+            @include larger-than(lgmobile) {
+                max-width: 580px;
+            }
+        }
+    .wrapper {
+            text-align: center;
+            width: 90%;
+            margin: 48px auto 55px;
+        @include between(lgmobile, tablet){
+                margin: 18px auto 35px;
+            }
+        h2 {
+                @extend .font_light;
+                font-size: 36px;
+                line-height: 1.2em;
+                color: $navy;
+               
+                @include larger-than(lgmobile) {
+                    max-width: 100%;
+                    font-size: 29px;
+                }
+                @include larger-than(desktop) {
+                    max-width: 100%;
+                    font-size: 42px;
+                }
+            }
+        ul {
+                list-style-type: none;
+                margin: 0 auto;
+                padding: 0;
+            &.icons {
+                    width: 100%;
+                    text-align: center;
+                    max-width: 300px;
+                    margin-bottom:13px;
+                @include larger-than(lgmobile){
+                        max-width: 800px;
+                    }
+                    @include larger-than(desktop) {
+                        max-width: 1024px;
+                    }
+                li {
+                    @include larger-than(lgmobile) {
+                            width: 30%;
+                            margin-right: 4%;
+                            display: inline-block; 
+                            vertical-align: top;
+                            line-height: 0;
+                            padding-top: 33px;
+                            @include larger-than (lgmobile) {
+                                padding-top: 33px;
+                            }
+                       
+                            &:last-child{
+                                margin-right: 0;
+                               
+                              
+                                
+                            }
+                            
+                            .break-it{
+                                display: block;
+                            }
+                        }
+                    h3.heading{
+                            @extend .font_regular;
+                            color: #25a6da;
+                            font-size: 21px;
+                            line-height: 1.3em;
+                            display: block;
+                            margin-bottom: 10px;
+                            margin-top: 18px;
+                            
+                            @include larger-than(lgmobile){
+                                font-size: 14px;
+                            }
+                            @include larger-than(tablet){
+                                margin-top: 45px;
+                            }
+                            @include larger-than(desktop){
+                                font-size: 21px;
+                            }
+                        }
+                    p.discription{
+                            strong{
+                                @extend .font_regular;
+                            }
+                            @extend .font_light;
+                            color: $dark_blue;
+                            font-size: 16px;
+                            line-height: 1.2em;
+
+                            @include larger-than(lgmobile){
+                                font-size: 11px;
+                            }
+                            @include larger-than(desktop){
+                                font-size: 16px;
+                            }
+                        }
+                    i {
+                            margin: 33px auto 18px;
+                            height: 80px;
+                            display: block;
+
+                            @include larger-than(lgmobile){
+                                    margin: 0 auto 18px;
+                            }
+                        
+                            @include larger-than(desktop){
+                                margin: 33px auto 45px;
+                            }
+                        }
+                }
+
+            }
+        }
+    }
+}
+
+
+
+
